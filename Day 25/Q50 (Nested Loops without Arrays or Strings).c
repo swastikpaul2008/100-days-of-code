@@ -1,0 +1,13 @@
+/* Write a program to print the following pattern:\n*****\n ****\n  ***\n   **\n
+ * * */
+#include <stdio.h>
+int main(void) {
+  for (int r = 0; r < 5; r++) {
+    for (int s = 0; s < r; s++)
+      putchar(' ');
+    for (int c = r; c < 5; c++)
+      putchar('*');
+    putchar('\n');
+  }
+  return 0;
+}
